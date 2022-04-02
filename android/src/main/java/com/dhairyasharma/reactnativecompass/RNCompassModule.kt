@@ -1,13 +1,19 @@
 package com.dhairyasharma.reactnativecompass
 
-import com.facebook.react.bridge.ReactApplicationContext
-import com.facebook.react.bridge.ReactContextBaseJavaModule
 
-class RNCompassModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+import com.facebook.react.uimanager.SimpleViewManager
+import com.facebook.react.uimanager.ThemedReactContext
+import com.facebook.react.uimanager.annotations.ReactProp
 
-    override fun getName() = "RNCompassModule"
-
-    override fun getConstants(): MutableMap<String, Any> {
-        return hashMapOf("count" to 1)
+class RNCompassModule : SimpleViewManager<CompassModule?>() {
+    override fun getName(): String {
+        return "RNCompassModule"
+    }
+    override fun createViewInstance(reactContext: ThemedReactContext): CompassModule {
+        return CompassModule(reactContext)
+    }
+    @ReactProp(name = "handHeight")
+    fun setSwitchStatus(switchView: CompassModule, handHeight: Int) {
+        switchView.setIsTurnedOn(handHeight)
     }
 }
