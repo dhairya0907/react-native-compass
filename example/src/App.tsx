@@ -1,35 +1,62 @@
-import React, { useEffect } from 'react'
-import {StyleSheet, View, Button} from 'react-native';
-import { CompassModule, getDegree} from '@dhairyasharma/react-native-compass';
+import React, { useEffect } from "react";
+import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import { CompassModule, getDegree } from "@dhairyasharma/react-native-compass";
 
 const App = () => {
-  useEffect(() => {
-  })
+  const [degree, setDegree] = React.useState("");
+
+  useEffect(() => {});
 
   return (
     <View style={styles.container}>
-      <Button title="Get Degree" onPress={() => {
-       getDegree().then(degree => {
-          console.log(degree);
-        });
-        
-      }} />
-      <CompassModule style={styles.javaBtn} handHeight={280}/>
+      <TouchableOpacity
+        style={styles.degreeButton}
+        onPress={() => {
+          getDegree().then((degree) => {
+            setDegree(`Degree : ${degree}`);
+          });
+        }}
+      >
+        <Text style={{ color: "#000" }}>Get Degree</Text>
+      </TouchableOpacity>
+      <Text
+        style={{
+          color: "#fff",
+          bottom: 150,
+          position: "absolute",
+          fontSize: 20,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {degree}
+      </Text>
+      <CompassModule style={styles.compassModule} handHeight={270} />
     </View>
   );
-}
-export default App
+};
+export default App;
 
 const styles = StyleSheet.create({
   container: {
-   flex: 1,
-    backgroundColor: 'pink',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: "100%",
+    height: "100%",
+    backgroundColor: "#000",
+    alignItems: "center",
   },
-  javaBtn: {
-    width: "90%",
-    height: "90%",
-
+  compassModule: {
+    width: "100%",
+    height: "100%",
+    top: 10,
+  },
+  degreeButton: {
+    width: 200,
+    height: 70,
+    bottom: 10,
+    position: "absolute",
+    backgroundColor: "#87CEEB",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 1,
   },
 });
