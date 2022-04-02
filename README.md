@@ -15,7 +15,7 @@
 Install the library using either Yarn:
 
 ```
-yarn add @dhairyasharma/react-native-compaass
+yarn add @dhairyasharma/react-native-compass
 yarn add react-native-shared-preferences@1.0.2
 ```
 
