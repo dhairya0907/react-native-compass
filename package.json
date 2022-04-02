@@ -1,18 +1,23 @@
 {
   "name": "@dhairyasharma/react-native-compass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Native android compass library for react-native",
   "homepage": "https://github.com/dhairya0907/react-native-compass#readme",
-  "main": "src/index.tsx",
+  "main": "lib/index.tsx",
   "types": "lib/index.d.ts",
   "author": "Dhairya Sharma <dhairya.sharma532@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhairya0907/react-native-compass.git"
+  },
   "files": [
     "android",
     "ios",
     "lib",
     "react-native-compass.podspec",
     "!android/build",
+    "!ios/build",
     "!.DS_Store",
     "!.gradle",
     "!.idea",
@@ -25,6 +30,15 @@
     "!project.xcworkspace",
     "!xcshareddata",
     "!xcuserdata"
+  ],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "compass",
+    "native compass",
+    "no fluctuations",
+    "with degrees"
   ],
   "scripts": {
     "compile": "rm -rf lib && tsc -p .",
