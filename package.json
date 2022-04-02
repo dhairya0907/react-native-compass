@@ -1,6 +1,6 @@
 {
   "name": "@dhairyasharma/react-native-compass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native android compass library for react-native",
   "homepage": "https://github.com/dhairya0907/react-native-compass#readme",
   "main": "lib/index.js",
