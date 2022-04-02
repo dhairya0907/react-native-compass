@@ -63,5 +63,8 @@
       "json",
       "node"
     ]
+  },
+  "dependencies": {
+    "react-native-shared-preferences": "^1.0.2"
   }
 }
