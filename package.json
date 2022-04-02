@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Native android compass library for react-native",
   "homepage": "https://github.com/dhairya0907/react-native-compass#readme",
-  "main": "lib/index.tsx",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Dhairya Sharma <dhairya.sharma532@gmail.com>",
   "license": "MIT",

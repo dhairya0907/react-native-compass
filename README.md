@@ -54,6 +54,7 @@ import { CompassModule, getDegree } from "@dhairyasharma/react-native-compass";
 
 // Here handHeight is the height of the hand in dp
 // And the style is the style of the compass
+// Try to call CompassModule in the end of the design, see example
 ```
 
 ## Get the compass Degree
