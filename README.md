@@ -5,6 +5,7 @@
 [![Twitter](https://img.shields.io/badge/dhairya__0907-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white) ](https://twitter.com/dhairya_0907) [ ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white) ](https://www.linkedin.com/in/dhairyasharma0907/)
 
 ### Native android compass library for react-native
+***Only supports Android, for IOS work is in progress.***
 
 
 &nbsp;
@@ -29,6 +30,7 @@ or git:
 
 ```sh
 npm install git+https://github.com/dhairya0907/react-native-compass.git
+npm install git+https://github.com/sriraman/react-native-shared-preferences.git
 ```
 
 ### Using React Native >= 0.60
@@ -65,7 +67,7 @@ getDegree().then(degree => {
 
 **NOTE**
 
-**For detail usage see [example](https://github.com/dhairya0907/react-native-encryption/blob/d932db273b27767539cd3e4226e1769ff3195483/example/src/App.tsx#L1).**
+**For detail usage see [example](https://github.com/dhairya0907/react-nativee-compass/blob/a593e7376c48a755a506f972949fe69c48f9aeba/example/src/App.tsx#L1).**
 
 ---
 
