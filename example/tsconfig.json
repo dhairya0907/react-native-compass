@@ -7,7 +7,7 @@
     "module": "CommonJS",
     "noEmit": true,
     "paths": {
-      "react-native-compass": ["../src"]
+      "@dhairyasharma/react-native-compass": ["../src"]
     },
     "skipLibCheck": true,
     "strict": true,

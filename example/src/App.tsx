@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import RNCompassModule, { Counter } from 'react-native-compass'
+import RNCompassModule, { Counter } from '@dhairyasharma/react-native-compass'
 
 const App = () => {
   useEffect(() => {
